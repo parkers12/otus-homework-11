@@ -1,4 +1,4 @@
-type FIXME = "initial" | "inWork" | "buyingSupplies" | "producing" | "fullfilled";
+type FIXME = Order["state"];
 
 type Order =
   | {
