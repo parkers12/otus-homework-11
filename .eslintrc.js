@@ -18,6 +18,10 @@ module.exports = {
         ignoreComments: true,
       },
     ],
+    "no-unused-vars": "off",
+    "no-use-before-define": "off",
+    "import/prefer-default-export": "off",
+    "no-shadow": "off",
   },
   settings: {
     "import/resolver": {
