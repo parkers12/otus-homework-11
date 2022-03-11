@@ -4,8 +4,8 @@
   "description": "Solving typing tasks",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint && prettier --check",
-    "lint:fix": "eslint . --fix && prettier --write",
+    "lint": "eslint . && prettier --check .",
+    "lint:fix": "eslint . --fix && prettier --write .",
     "typecheck": "tsc --noEmit",
     "prepare": "husky install"
   },
@@ -46,7 +46,7 @@
     }
   },
   "lint-staged": {
-    "*.js": "eslint --fix",
-    "*.{js,css,md,json,yml}": "prettier --write"
+    "*.{js,ts}": "eslint --fix",
+    "*.{js,ts,css,md,json,yml}": "prettier --write"
   }
 }

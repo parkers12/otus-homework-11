@@ -1,5 +1,4 @@
-type FIXME =
-  Exclude<OrderState[], "buyingSupplies | producing">;
+type FIXME = Exclude<OrderState[], "buyingSupplies | producing">;
 
 const orderStates = [
   "initial",
