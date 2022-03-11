@@ -36,6 +36,5 @@ export const filterOnlyInitialAndInWorkOrder = (order: Order): FIXME => {
   if (order.state === "initial" || order.state === "inWork") {
     return order;
   }
-
   return null;
 };
